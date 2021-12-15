@@ -1,0 +1,11 @@
+**/node_modules/*
+**/out/*
+**/.next/*
+package.json
+*.config.js
+.eslintrc.js
+.prettierrc
+jest.setup.js
+jest.config.js
+config.js
+renovate.json // (あとで追加するファイル)
