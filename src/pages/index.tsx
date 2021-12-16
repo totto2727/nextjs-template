@@ -4,12 +4,11 @@ const Home: NextPage = () => {
   return (
     <>
       <div className='text-3xl font-bold underline'>Hello world!</div>
-      <button
-        className='btn btn-primary'
-        data-toggle-theme='dark,light'
-        data-act-class='ACTIVECLASS'>
-        Change Mode
-      </button>
+      <select data-choose-theme className='select select-primary'>
+        {/* <option value=''>Default</option> */}
+        <option value='light'>Light</option>
+        <option value='dark'>Dark</option>
+      </select>
     </>
   )
 }
