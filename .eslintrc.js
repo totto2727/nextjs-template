@@ -13,13 +13,7 @@ module.exports = {
     },
     sourceType: 'module',
   },
-  plugins: [
-    'react-hooks',
-    'react',
-    '@typescript-eslint',
-    'import',
-    'simple-import-sort',
-  ],
+  plugins: ['@typescript-eslint', 'unused-imports'],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
@@ -63,18 +57,23 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn', // effectやcallbackのdeps linter
     'import/newline-after-import': 'error',
     'import/no-default-export': 'error', // default-exportを禁止する
-    'simple-import-sort/imports': 'error', // import文の整列
-    'simple-import-sort/exports': 'error', // export文の整列
     '@typescript-eslint/no-explicit-any': 'error',
     '@typescript-eslint/explicit-module-boundary-types': 'error',
     '@typescript-eslint/consistent-type-imports': [
       'warn',
       { prefer: 'type-imports' },
     ],
-    '@typescript-eslint/no-unused-vars': [
-      'error',
-      { varsIgnorePattern: '^_', argsIgnorePattern: '^_' },
-    ], // 未使用変数はエラー
+    '@typescript-eslint/no-unused-vars': 'off',
+    'unused-imports/no-unused-imports': 'error',
+    'unused-imports/no-unused-vars': [
+      'warn',
+      {
+        vars: 'all',
+        varsIgnorePattern: '^_',
+        args: 'after-used',
+        argsIgnorePattern: '^_',
+      },
+    ],
   },
   overrides: [
     // 一部ルールを除外する
