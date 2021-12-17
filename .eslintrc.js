@@ -64,6 +64,9 @@ module.exports = {
       { prefer: 'type-imports' },
     ],
     '@typescript-eslint/no-unused-vars': 'off',
+    'import/newline-after-import': 'error',
+    'import/no-named-as-default': 'error',
+    // 'import/no-default-export': 'error', // default-exportを禁止する
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': [
       'warn',
@@ -78,7 +81,11 @@ module.exports = {
   overrides: [
     // 一部ルールを除外する
     {
-      files: ['src/pages/**/*.tsx', 'src/pages/api/**/*.ts'], // pagesのdefault exportは仕方ないので除外
+      files: [
+        'src/pages/**/*.tsx',
+        'src/pages/api/**/*.ts',
+        'src/components/**/*.tsx',
+      ], // pagesのdefault exportは仕方ないので除外
       rules: { 'import/no-default-export': 'off' },
     },
     {
