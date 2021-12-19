@@ -13,7 +13,12 @@ module.exports = {
     },
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint', 'unused-imports'],
+  plugins: [
+    '@typescript-eslint',
+    'unused-imports',
+    'import',
+    'simple-import-sort',
+  ],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
@@ -64,9 +69,8 @@ module.exports = {
       { prefer: 'type-imports' },
     ],
     '@typescript-eslint/no-unused-vars': 'off',
-    'import/newline-after-import': 'error',
-    'import/no-named-as-default': 'error',
-    // 'import/no-default-export': 'error', // default-exportを禁止する
+    'simple-import-sort/imports': 'error', // import文の整列
+    'simple-import-sort/exports': 'error', // export文の整列
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': [
       'warn',
