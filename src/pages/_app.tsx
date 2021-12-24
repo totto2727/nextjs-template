@@ -1,4 +1,5 @@
 import './globals.css'
+import '@aws-amplify/ui-react/styles.css'
 
 import { Authenticator, useAuthenticator } from '@aws-amplify/ui-react'
 import Amplify from 'aws-amplify'
@@ -39,15 +40,17 @@ const App = ({ Component, pageProps }: AppProps) => {
     themeChange(false)
   }, [])
   return (
-    <Authenticator>
-      {() => {
-        return (
-          <Main>
-            <Component {...pageProps} />
-          </Main>
-        )
-      }}
-    </Authenticator>
+    <div>
+      <Authenticator>
+        {() => {
+          return (
+            <Main>
+              <Component {...pageProps} />
+            </Main>
+          )
+        }}
+      </Authenticator>
+    </div>
   )
 }
 

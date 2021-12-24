@@ -1,0 +1,11 @@
+image:
+  file: ./.devcontainer/Dockerfile
+  context: ./.devcontainer
+# Commands to start on workspace startup
+tasks:
+  - init: yarn install
+    command: yarn dev
+# Ports to expose on workspace startup
+ports:
+  - port: 3000
+    onOpen: open-preview
