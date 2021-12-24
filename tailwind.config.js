@@ -8,14 +8,7 @@ module.exports = {
       fontFamily: {
         sans: ['Noto Sans JP', 'sans-serif'],
         serif: ['Noto Serif JP', 'serif'],
-        mono: [
-          'Menlo',
-          'Monaco',
-          'Consolas',
-          'Liberation Mono',
-          'Courier New',
-          'monospace',
-        ],
+        mono: ['Noto Sans Mono', 'monospace'],
       },
     },
   },
