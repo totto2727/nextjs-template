@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "christian-kohler.path-intellisense",
+    "csstools.postcss",
+    "dbaeumer.vscode-eslint",
+    "donjayamanne.git-extension-pack",
+    "esbenp.prettier-vscode",
+    "github.vscode-pull-request-github",
+    "graphql.vscode-graphql",
+    "gruntfuggly.todo-tree",
+    "ms-azuretools.vscode-docker",
+    "orta.vscode-jest",
+    "quicktype.quicktype",
+    "redhat.vscode-yaml",
+    "tomoki1207.vscode-input-sequence"
+  ]
+}

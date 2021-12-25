@@ -1,42 +1,39 @@
 {
-  // Set *default* container specific settings.json values on container create.
-  "settings": {
-    "eslint.workingDirectories": [
-      {
-        "mode": "auto"
-      }
-    ],
-    "editor.formatOnSave": true,
-    "[json]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[markdown]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascriptreact]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescriptreact]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
-    "eslint.validate": [
-      "json",
-      "javascript",
-      "javascriptreact",
-      "typescript",
-      "typescriptreact"
-    ]
+  "editor.formatOnSave": true,
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "json",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
