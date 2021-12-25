@@ -12,12 +12,7 @@
     }
   },
   // Add the IDs of extensions you want installed when the container is created.
-  "extensions": [
-    "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
-    "csstools.postcss",
-    "bradlc.vscode-tailwindcss"
-  ],
+  "extensions": [],
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
   // Use 'postCreateCommand' to run commands after the container is created.
