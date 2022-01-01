@@ -1,4 +1,5 @@
 {
+  "baseBranches": ["main", "firebase"],
   "extends": ["config:base", "group:allNonMajor"],
   "timezone": "Asia/Tokyo",
   "schedule": ["every weekend"],
