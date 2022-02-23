@@ -1,4 +1,12 @@
 {
   "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "csstools.postcss",
+    "donjayamanne.git-extension-pack",
+    "github.vscode-pull-request-github",
+    "ms-azuretools.vscode-docker",
+    "Gruntfuggly.todo-tree"
   ]
 }

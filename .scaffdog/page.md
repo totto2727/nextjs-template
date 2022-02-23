@@ -29,7 +29,9 @@ import { {{ inputs.name | pascal -}}View } from './Presenter'
 
 export type {{ inputs.name | pascal -}}Props = {{ inputs.name | pascal -}}ViewProps
 
-export const {{ inputs.name | pascal -}}: FC<{{ inputs.name | pascal -}}Props> = (props) => {
+const {{ inputs.name | pascal -}}: FC<{{ inputs.name | pascal -}}Props> = (props) => {
   return <{{ inputs.name | pascal -}}View {...props} />
 }
+
+export default {{ inputs.name | pascal -}}
 ```
