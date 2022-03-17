@@ -68,7 +68,8 @@ module.exports = {
       'warn',
       { prefer: 'type-imports' },
     ],
-    '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',        
+    '@typescript-eslint/switch-exhaustiveness-check': 'error', // 必ずSwitch文の全パターンを検査する
     'simple-import-sort/imports': 'error', // import文の整列
     'simple-import-sort/exports': 'error', // export文の整列
     'unused-imports/no-unused-imports': 'error',
