@@ -7,8 +7,8 @@
     "start": "next start",
     "test": "jest",
     "lint": "next lint",
-    "fix": "next lint --fix",
-    "format": "prettier --check .",
+    "fix": "next lint --fix && prettier --write ./src",
+    "format": "prettier --check ./src",
     "prepare": "husky install",
     "component": "scaffdog generate component"
   },

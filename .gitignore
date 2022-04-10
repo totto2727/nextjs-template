@@ -62,3 +62,6 @@ amplifytools.xcconfig
 #amplify-do-not-edit-end
 #利用する際は消す
 amplify
+.env
+
+firebase.json

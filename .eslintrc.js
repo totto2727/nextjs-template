@@ -49,7 +49,11 @@ module.exports = {
     'prefer-arrow-callback': 'error', // arrow functionを許可
     'prefer-const': 'error', // const推奨
     'func-style': ['error', 'expression'], // 関数式を使わなければいけない
-    'arrow-body-style': ['error', 'always'], // 関数式の中身は必ず中括弧で囲む
+    'arrow-body-style': [
+      'error',
+      'as-needed',
+      { requireReturnForObjectLiteral: true },
+    ], // 必要な場合のみ囲む
     'no-restricted-imports': [
       'error',
       { paths: [{ name: 'react', importNames: ['default'] }] },
@@ -59,17 +63,17 @@ module.exports = {
     'react/display-name': 'error', // 無名関数を禁止する
     'react/no-unused-prop-types': 'warn', // 未使用propsはエラー
     'react-hooks/rules-of-hooks': 'error', // hooksの基本的なlinter
-    'react-hooks/exhaustive-deps': 'warn', // effectやcallbackのdeps linter
+    'react-hooks/exhaustive-deps': 'error', // effectやcallbackのdeps linter
     'import/newline-after-import': 'error',
     'import/no-default-export': 'error', // default-exportを禁止する
-    '@typescript-eslint/no-explicit-any': 'error',
-    '@typescript-eslint/explicit-module-boundary-types': 'error',
+    '@typescript-eslint/no-explicit-any': 'error', // Any型を禁止にする
+    '@typescript-eslint/explicit-module-boundary-types': 'error', // 返り値の定義を必須にする
     '@typescript-eslint/consistent-type-imports': [
-      'warn',
+      'error',
       { prefer: 'type-imports' },
     ],
-    '@typescript-eslint/no-unused-vars': 'off',        
-    '@typescript-eslint/switch-exhaustiveness-check': 'error', // 必ずSwitch文の全パターンを検査する
+    '@typescript-eslint/no-unused-vars': 'off', // pluginと被っているためOFF
+    '@typescript-eslint/switch-exhaustiveness-check': 'error', // Switch文の全検査を必須にする
     'simple-import-sort/imports': 'error', // import文の整列
     'simple-import-sort/exports': 'error', // export文の整列
     'unused-imports/no-unused-imports': 'error',
@@ -86,11 +90,7 @@ module.exports = {
   overrides: [
     // 一部ルールを除外する
     {
-      files: [
-        'src/pages/**/*.tsx',
-        'src/pages/api/**/*.ts',
-        'src/components/**/*.tsx',
-      ], // pagesのdefault exportは仕方ないので除外
+      files: ['src/pages/**/*.tsx', 'src/pages/api/**/*.ts'], // pagesのdefault exportは仕方ないので除外
       rules: { 'import/no-default-export': 'off' },
     },
     {

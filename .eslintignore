@@ -9,3 +9,4 @@ jest.setup.js
 jest.config.js
 config.js
 renovate.json
+tsconfig.json
