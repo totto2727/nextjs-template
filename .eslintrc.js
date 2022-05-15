@@ -48,6 +48,7 @@ module.exports = {
     ],
     'prefer-arrow-callback': 'error', // arrow functionを許可
     'prefer-const': 'error', // const推奨
+    'prefer-template': 'error', // テンプレートリテラルの使用を強制
     'func-style': ['error', 'expression'], // 関数式を使わなければいけない
     'arrow-body-style': [
       'error',
@@ -64,6 +65,21 @@ module.exports = {
     'react/no-unused-prop-types': 'warn', // 未使用propsはエラー
     'react-hooks/rules-of-hooks': 'error', // hooksの基本的なlinter
     'react-hooks/exhaustive-deps': 'error', // effectやcallbackのdeps linter
+    'react/jsx-boolean-value': 'error', // JSXの省略形
+    'react/jsx-curly-brace-presence': [
+      'error',
+      {
+        props: 'always',
+        children: 'never',
+      },
+    ], // JSXのカッコを強制
+    'react/self-closing-comp': [
+      'error',
+      {
+        component: true,
+        html: true,
+      },
+    ], // JSXの自己終了タグの使用を強制
     'import/newline-after-import': 'error',
     'import/no-default-export': 'error', // default-exportを禁止する
     '@typescript-eslint/no-explicit-any': 'error', // Any型を禁止にする
