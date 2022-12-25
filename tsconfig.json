@@ -9,7 +9,6 @@
     "allowJs": true,
     "declaration": true,
     "noEmit": true,
-    // "emitDeclarationOnly": true,
     "outDir": "dist",
     "skipLibCheck": true,
     "strict": true,

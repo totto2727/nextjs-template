@@ -1,4 +1,4 @@
-// https://prettier.io/docs/en/options.html
+// https://qiita.com/takeshisakuma/items/bbb2cd2f1c65de70e363
 module.exports = {
   printWidth: 80, // default
   tabWidth: 2, // default

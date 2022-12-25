@@ -1,12 +1,7 @@
 **/node_modules/*
-**/out/*
+**/dist/*
 **/.next/*
-package.json
-*.config.js
-.eslintrc.js
-.prettierrc
-jest.setup.js
-jest.config.js
-config.js
-renovate.json
-tsconfig.json
+**/*.config.js
+**/*.setup.js
+**/*rc.js
+**/*rc
