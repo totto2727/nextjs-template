@@ -1,7 +1,0 @@
-**/node_modules/*
-**/dist/*
-**/.next/*
-**/*.config.js
-**/*.setup.js
-**/*rc.js
-**/*rc
