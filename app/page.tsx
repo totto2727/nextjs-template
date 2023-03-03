@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Button } from 'src/component/button'
+import { Button } from 'src/component/Button'
 
 export const metadata = {
   title: 'nextjs-template',
