@@ -5,7 +5,7 @@ const nextConfig = {
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   reactStrictMode: true,
   eslint: {
-    dirs: ["app", "src", ".storybook", "git"],
+    dirs: ['app', 'src', '.storybook', 'git'],
   },
   experimental: {
     appDir: true,
@@ -17,8 +17,8 @@ const nextConfig = {
       },
     },
   },
-};
+}
 
-const withMDX = nextMDX();
+const withMDX = nextMDX()
 
-export default withMDX(nextConfig);
+export default withMDX(nextConfig)

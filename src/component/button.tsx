@@ -1,3 +1,5 @@
+import styles from './button.module.css'
+
 export function Button() {
-  return <div>Hello, World!</div>
+  return <div className={styles['button']}>Hello, World!</div>
 }
