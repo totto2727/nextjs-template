@@ -4,7 +4,12 @@ const config = {
     es2021: true,
     node: true,
   },
-  extends: ['eslint:recommended', 'next/core-web-vitals', 'prettier'],
+  extends: [
+    'eslint:recommended',
+    'plugin:storybook/recommended',
+    'next/core-web-vitals',
+    'prettier',
+  ],
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
@@ -97,4 +102,4 @@ const config = {
     'react-hooks/exhaustive-deps': 'error', // effectやcallbackのdeps linter
   },
 }
-export default config
+module.exports = config
