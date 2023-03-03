@@ -1,5 +1,5 @@
-import PageMDX from "./hello-world.mdx"
+import PageMDX from './hello-world.mdx'
 
 export default function Page() {
-  return < PageMDX />
+  return <PageMDX />
 }

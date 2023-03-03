@@ -1,5 +1,4 @@
 import nextMDX from '@next/mdx'
-import { createVanillaExtractPlugin } from "@vanilla-extract/next-plugin"
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -20,7 +19,6 @@ const nextConfig = {
   },
 };
 
-const withVanillaExtract = createVanillaExtractPlugin();
 const withMDX = nextMDX();
 
-export default withVanillaExtract(withMDX(nextConfig));
+export default withMDX(nextConfig);
