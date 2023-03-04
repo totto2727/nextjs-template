@@ -11,7 +11,11 @@ const buildPrettierCommand = (filenames) =>
     .join(' --file ')}`
 
 module.exports = {
-  '{src,app,git,.storybook}/**/*.{js,jsx,ts,tsx}': [
+  './*.{js,cjs,mjs,jsx,ts,tsx}': [
+    buildEslintCommand,
+    buildPrettierCommand,
+  ],
+  '{src,app,git,.storybook}/**/*.{js,cjs,mjs,jsx,ts,tsx}': [
     buildEslintCommand,
     buildPrettierCommand,
   ],

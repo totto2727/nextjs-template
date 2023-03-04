@@ -10,7 +10,7 @@ const nextConfig = {
   experimental: {
     appDir: true,
     mdxRs: true,
-    typedRoutes: true,
+    typedRoutes: false,
     turbo: {
       loaders: {
         '.svg': ['@svgr/webpack'],
