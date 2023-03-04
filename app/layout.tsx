@@ -1,10 +1,8 @@
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+import type { ReactNode } from 'react'
+
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="ja">
+    <html lang='ja'>
       {/*
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head

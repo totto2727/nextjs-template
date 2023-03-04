@@ -1,8 +1,9 @@
-const config = {
+module.exports = {
   env: {
     browser: true,
     es2021: true,
     node: true,
+    'jest/globals': true,
   },
   extends: [
     'eslint:recommended',
@@ -10,13 +11,14 @@ const config = {
     'next/core-web-vitals',
     'prettier',
   ],
+  plugins: ['jest'],
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
       extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
-        'plugin:storybook/recommended',
+        // 'plugin:storybook/recommended',
         'next/core-web-vitals',
         'prettier',
       ],
@@ -45,7 +47,6 @@ const config = {
       },
     },
   ],
-  plugins: [],
   // console.logが残っていればwarn
   rules: {
     'no-console': [
@@ -102,4 +103,3 @@ const config = {
     'react-hooks/exhaustive-deps': 'error', // effectやcallbackのdeps linter
   },
 }
-module.exports = config
