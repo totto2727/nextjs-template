@@ -13,7 +13,7 @@ const customJestConfig = {
   // setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
 
   // moduleDirectories: ['node_modules', '<rootDir>/'],
-  setupFilesAfterEnv: ['./jest.setup.js'],
+  setupFilesAfterEnv: ['./jest.setup.mjs'],
   testEnvironment: 'jest-environment-jsdom',
 }
 
