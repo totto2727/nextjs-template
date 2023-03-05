@@ -101,5 +101,9 @@ module.exports = {
     ],
     'react-hooks/rules-of-hooks': 'warn', // hooksの基本的なlinter
     'react-hooks/exhaustive-deps': 'error', // effectやcallbackのdeps linter
+    '@next/next/no-html-link-for-pages': [
+      'error',
+      ['app', 'src', '.storybook'],
+    ],
   },
 }
