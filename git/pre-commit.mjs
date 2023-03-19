@@ -12,11 +12,13 @@ const prefixes = [
   'chore',
 ]
 const commitMessage = fs.readFileSync('./.git/COMMIT_EDITMSG', 'utf8').trim()
-const isMismatch = !prefixes.some((str) =>
-  commitMessage.match(new RegExp(String.raw`^${str}:\s.*`, 'i')),
-)
+const isMatch =
+  commitMessage.match(/^Merge/i) ||
+  prefixes.some((str) =>
+    commitMessage.match(new RegExp(String.raw`^${str}:\s.*`, 'i')),
+  )
 
-if (isMismatch) {
+if (!isMatch) {
   const message = boxen('☠⚠️ コミットメッセージにPrefixを付けてください ⚠️️☠', {
     borderStyle: 'double',
     align: 'center',
