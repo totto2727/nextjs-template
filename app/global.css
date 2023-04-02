@@ -1,7 +1,12 @@
 /* @layer reset, global; */
 
+/* ほとんど削除 */
 /* @import '@acab/reset.css' layer(reset); */
 @import '@acab/reset.css';
+
+/* 統一目的 */
+/* https://gist.github.com/EllyLoel/4ff8a6472247e6dd2315fd4038926522 */
+/* @import './reset.css'; */
 
 /* @layer global { */
 :root {
