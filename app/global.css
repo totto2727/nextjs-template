@@ -1,0 +1,11 @@
+/* @layer reset, global; */
+
+/* @import '@acab/reset.css' layer(reset); */
+@import '@acab/reset.css';
+
+/* @layer global { */
+:root {
+  color-scheme: normal;
+  /* color-scheme: light dark; */
+}
+/* } */

@@ -21,6 +21,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@acab/reset.css": "^0.5.3",
     "classnames": "^2.3.2",
     "date-fns": "^2.29.3",
     "next": "^13.2.3",
