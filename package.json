@@ -39,7 +39,7 @@
     "@storybook/blocks": "^7.0.0-alpha.8",
     "@storybook/nextjs": "^7.0.0-beta.60",
     "@storybook/react": "^7.0.0-beta.60",
-    "@storybook/testing-library": "^0.0.14-next.1",
+    "@storybook/testing-library": "^0.1.0",
     "@svgr/webpack": "^6.5.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
