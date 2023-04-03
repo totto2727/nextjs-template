@@ -5,7 +5,7 @@ const nextConfig = {
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   reactStrictMode: true,
   eslint: {
-    dirs: ['app', 'src', '.storybook', 'git'],
+    dirs: ['app', 'src', 'types', '.storybook', 'git'],
   },
   experimental: {
     appDir: true,
